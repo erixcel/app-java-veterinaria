@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">veterinaria-android</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="registrarse">REGISTRARSE</string>
 </resources>

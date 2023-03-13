@@ -27,6 +27,8 @@
         android:id="@+id/btnNavigationMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@null"
+        android:isScrollContainer="false"
+        android:pointerIcon="none"
+        app:itemIconTint="#00FFFFFF"
         app:menu="@menu/menu_principal" />
 </LinearLayout>

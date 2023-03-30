@@ -1,6 +1,5 @@
 package firebase.app.veterinaria_android;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,13 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-public class registrarseActivity extends AppCompatActivity {
+public class RegistrarseActivity extends AppCompatActivity {
 
     private EditText correo;
     private EditText contraseña1;
@@ -46,7 +41,7 @@ public class registrarseActivity extends AppCompatActivity {
             String password = contraseña1.getText().toString().equals("") ? " " : contraseña1.getText().toString();
             auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener( task -> {
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(getApplicationContext(), menuActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(),"Usuario creado correctamente, Bienvenido", Toast.LENGTH_SHORT).show();
                 }else{

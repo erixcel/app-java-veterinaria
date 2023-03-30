@@ -12,10 +12,10 @@
         android:theme="@style/Theme.Veterinariaandroid"
         tools:targetApi="31">
         <activity
-            android:name=".menuActivity"
+            android:name=".MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".registrarseActivity"
+            android:name=".RegistrarseActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

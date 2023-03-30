@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void irRegistrarse(View view){
-        Intent intent = new Intent(this, registrarseActivity.class);
+        Intent intent = new Intent(this, RegistrarseActivity.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
@@ -37,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
         String password = contraseña.getText().toString().equals("") ? " " : contraseña.getText().toString();
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
-                Intent intent = new Intent(this, menuActivity.class);
+                Intent intent = new Intent(this, MenuActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Sesion Iniciada correctamente", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getApplicationContext(),"Authentication failed", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 }

@@ -9,4 +9,14 @@
     <string name="crear_cuenta">CREAR CUENTA</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    #NAVIGATIONVIEW
+    <string name="mascotas">MASCOTAS</string>
+    <string name="web">PAGINA WEB</string>
+    <string name="libros_medico">LIBROS MEDICOS</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
+
+
+
 </resources>

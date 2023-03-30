@@ -5,4 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7C4DFF"
-    tools:context=".fragment_pendientes" />
+    tools:context=".Fragment_pendientes" />

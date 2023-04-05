@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="arraySexo">
-        <item>Macho</item>
-        <item>Hembra</item>
-    </string-array>
-</resources>
